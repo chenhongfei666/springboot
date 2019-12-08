@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "jdbc",
+      "type": "com.ruijie.config.JdbcProperties",
+      "sourceType": "com.ruijie.config.JdbcProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "jdbc.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.ruijie.config.JdbcProperties"
+    },
+    {
+      "name": "jdbc.password",
+      "type": "java.lang.String",
+      "sourceType": "com.ruijie.config.JdbcProperties"
+    },
+    {
+      "name": "jdbc.url",
+      "type": "java.lang.String",
+      "sourceType": "com.ruijie.config.JdbcProperties"
+    },
+    {
+      "name": "jdbc.username",
+      "type": "java.lang.String",
+      "sourceType": "com.ruijie.config.JdbcProperties"
+    }
+  ],
+  "hints": []
+}

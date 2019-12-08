@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.ruijie.service.UserServiceTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.103 s <<< FAILURE! - in com.ruijie.service.UserServiceTest
+saveUser(com.ruijie.service.UserServiceTest)  Time elapsed: 1.055 s  <<< ERROR!
+org.springframework.dao.DuplicateKeyException: 
+
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'chf' for key 'username'
+### The error may exist in com/ruijie/mapper/UserMapper.java (best guess)
+### The error may involve com.ruijie.mapper.UserMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO tb_user  ( id,user_name,password,name,age,sex,created ) VALUES( ?,?,?,?,?,?,? )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'chf' for key 'username'
+; Duplicate entry 'chf' for key 'username'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'chf' for key 'username'
+	at com.ruijie.service.UserServiceTest.saveUser(UserServiceTest.java:35)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'chf' for key 'username'
+	at com.ruijie.service.UserServiceTest.saveUser(UserServiceTest.java:35)
+
